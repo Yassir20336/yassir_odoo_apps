@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Product Variant -->
+    <record id="product_product_form_total_qty_all_companies" model="ir.ui.view">
+        <field name="name">product.product.form.total.qty.all.companies</field>
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="product.product_normal_form_view"/>
+        <field name="arch" type="xml">
+
+            <xpath expr="//page[@name='inventory']" position="after">
+                <page name="stock_details" string="Stock Details" groups="product_multi_company_stock_details.group_view_multi_company_stock_details">
+                    <group>
+                        <field name="total_qty_all_companies" readonly="1"/>
+                    <field name="location_qty_details"
+                        widget="html"
+                        options="{'style-inline': true}"
+                        readonly="1"/>
+                    </group>
+                </page>
+            </xpath>
+
+        </field>
+    </record>
+
+    <!-- Product Template -->
+    <record id="product_template_form_total_qty_all_companies" model="ir.ui.view">
+        <field name="name">product.template.form.total.qty.all.companies</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view"/>
+        <field name="arch" type="xml">
+
+            <xpath expr="//page[@name='inventory']" position="after">
+                <page name="stock_details" string="Stock Details" groups="product_multi_company_stock_details.group_view_multi_company_stock_details">
+                    <group>
+                        <field name="total_qty_all_companies" readonly="1"/>
+                    <field name="location_qty_details"
+                        widget="html"
+                        options="{'style-inline': true}"
+                        readonly="1"/>
+                    </group>
+                </page>
+            </xpath>
+
+        </field>
+    </record>
+
+</odoo>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Multi-Company Stock Details</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #444;
+            line-height: 1.7;
+            background: #fff;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .banner {
+            text-align: center;
+        }
+
+        .banner img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: #875A7B;
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        h2 {
+            color: #875A7B;
+            border-bottom: 2px solid #875A7B;
+            padding-bottom: 8px;
+            margin-top: 40px;
+        }
+
+        h3 {
+            color: #555;
+        }
+
+        .lead {
+            text-align: center;
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 40px;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            flex: 1 1 45%;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            background: #fafafa;
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: #875A7B;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .screenshot {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .screenshot img {
+            width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        table th {
+            background: #875A7B;
+            color: white;
+            padding: 12px;
+        }
+
+        table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+
+        .footer {
+            background: #f8f8f8;
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 40px;
+        }
+
+        .center {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="banner">
+        <img src="banner.png">
+    </div>
+
+    <h1>Multi-Company Stock Details</h1>
+
+    <p class="lead">
+        View product stock quantities across all companies directly from the product form
+        without switching between companies.
+    </p>
+
+    <h2>Overview</h2>
+
+    <p>
+        Managing inventory in a multi-company environment usually requires switching
+        between companies just to check stock availability.
+    </p>
+
+    <p>
+        <strong>Multi-Company Stock Details</strong> solves this problem by adding
+        a dedicated <strong>Stock Details</strong> tab inside the Product form.
+    </p>
+
+    <p>
+        Authorized users can instantly view stock information across all companies
+        from a single screen.
+    </p>
+
+    <h2>Key Features</h2>
+
+    <div class="features">
+
+        <div class="card">
+            <h3>Inventory Visibility</h3>
+
+            <ul>
+                <li>View stock across all companies.</li>
+                <li>Total quantity for all companies.</li>
+                <li>Warehouse/Location details.</li>
+                <li>Product Variant support.</li>
+            </ul>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Security</h3>
+
+            <ul>
+                <li>Dedicated Security Group.</li>
+                <li>Only authorized users can access the tab.</li>
+                <li>No changes to existing workflows.</li>
+                <li>Safe for Multi-Company environments.</li>
+            </ul>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Stock Information</h3>
+
+            <ul>
+                <li>On Hand Quantity.</li>
+                <li>Available Quantity.</li>
+                <li>Company Name.</li>
+                <li>Location Name.</li>
+            </ul>
+
+        </div>
+
+        <div class="card">
+
+            <h3>User Experience</h3>
+
+            <ul>
+                <li>Integrated into Product Form.</li>
+                <li>Clean and responsive table.</li>
+                <li>Easy to use.</li>
+                <li>No configuration required.</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <h2>Stock Details Tab</h2>
+
+    <div class="screenshot">
+        <img src="screenshot1.png">
+    </div>
+
+    <h2>Displayed Information</h2>
+
+    <table>
+
+        <tr>
+            <th>Field</th>
+            <th>Description</th>
+        </tr>
+
+        <tr>
+            <td>Total Qty (All Companies)</td>
+            <td>Total inventory quantity across all companies.</td>
+        </tr>
+
+        <tr>
+            <td>Company</td>
+            <td>Company owning the inventory.</td>
+        </tr>
+
+        <tr>
+            <td>Location</td>
+            <td>Warehouse location.</td>
+        </tr>
+
+        <tr>
+            <td>On Hand</td>
+            <td>Physical stock quantity.</td>
+        </tr>
+
+        <tr>
+            <td>Available</td>
+            <td>Available quantity after reservations.</td>
+        </tr>
+
+    </table>
+
+    <h2>Second Preview</h2>
+
+    <div class="screenshot">
+        <img src="screenshot2.png">
+    </div>
+
+    <h2>Compatibility</h2>
+
+    <ul>
+        <li>✔ Odoo 19 Enterprise</li>
+        <li>✔ Odoo 19 Community</li>
+        <li>✔ Multi-Company</li>
+        <li>✔ Inventory</li>
+    </ul>
+
+    <h2>Support</h2>
+
+    <div class="footer">
+
+        <p>
+            Need help or have a feature request?
+        </p>
+
+        <p>
+            <strong>Author:</strong> Yassir Sheva
+        </p>
+
+        <p>
+            Thank you for using our applications.
+        </p>
+
+    </div>
+
+</div>
+
+</body>
+</html>

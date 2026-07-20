@@ -1,0 +1,5 @@
+<odoo>
+    <record id="group_view_multi_company_stock_details" model="res.groups">
+        <field name="name">View Multi-Company Stock Details</field>
+    </record>
+</odoo>
