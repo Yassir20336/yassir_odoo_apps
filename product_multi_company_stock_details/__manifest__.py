@@ -25,7 +25,8 @@ Perfect for businesses managing inventory across multiple legal entities.
     'maintainer': 'Yassir Sheva',
     'website': 'https://www.linkedin.com/in/yassir203',
     'license': 'LGPL-3',
-
+    'price': 10,
+    'currency': 'USD',
     'depends': [
         'base',
         'stock',
@@ -36,9 +37,9 @@ Perfect for businesses managing inventory across multiple legal entities.
         'views/product_view.xml',
     ],
 
-    # 'images': [
-    #     'static/description/banner.png',
-    # ],
+    'images': [
+        'static/description/banner.png',
+    ],
 
     'installable': True,
     'application': False,
